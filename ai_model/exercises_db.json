@@ -1,0 +1,80 @@
+{
+  "warm_up": [
+    { "name": "Jumping Jacks", "duration": "2 minutes", "form_tip": "Keep a steady pace, land softly on the balls of your feet." },
+    { "name": "Arm Circles", "duration": "1 minute", "form_tip": "Start with small circles and gradually increase the size." },
+    { "name": "High Knees", "duration": "1 minute", "form_tip": "Drive your knees up to waist level, engage your core." },
+    { "name": "Bodyweight Squats", "duration": "1 minute", "form_tip": "Keep your chest up and push your hips back as if sitting in a chair." },
+    { "name": "Dynamic Lunges", "duration": "1 minute", "form_tip": "Step forward and drop your back knee straight down, keep torso upright." },
+    { "name": "Torso Twists", "duration": "1 minute", "form_tip": "Keep your hips facing forward and rotate from your upper spine." }
+  ],
+  "cool_down": [
+    { "name": "Standing Quad Stretch", "duration": "1 minute", "form_tip": "Keep your knees together and push your hips slightly forward." },
+    { "name": "Hamstring Stretch", "duration": "1 minute", "form_tip": "Hinge at the hips, keep your back straight, don't round your shoulders." },
+    { "name": "Shoulder Stretch", "duration": "1 minute", "form_tip": "Pull your arm gently across your chest without twisting your torso." },
+    { "name": "Deep Breathing", "duration": "2 minutes", "form_tip": "Inhale deeply through your nose for 4 seconds, exhale through your mouth for 6 seconds." },
+    { "name": "Child's Pose", "duration": "1 minute", "form_tip": "Sit back on your heels and reach your arms forward, relaxing your lower back." }
+  ],
+  "chest": [
+    { "name": "Push-Ups", "sets": 3, "reps": "12-15", "rest_between_sets": "60 seconds", "form_tip": "Keep your core tight and elbows at a 45-degree angle." },
+    { "name": "Dumbbell Bench Press", "sets": 4, "reps": "10-12", "rest_between_sets": "90 seconds", "form_tip": "Keep feet flat on the floor and arch your back slightly." },
+    { "name": "Incline Dumbbell Press", "sets": 3, "reps": "10-12", "rest_between_sets": "90 seconds", "form_tip": "Set bench at 30-45 degrees for upper chest activation." },
+    { "name": "Decline Push-Ups", "sets": 3, "reps": "10-15", "rest_between_sets": "60 seconds", "form_tip": "Elevate your feet on a stable surface, keep body in a straight line." },
+    { "name": "Chest Flyes", "sets": 3, "reps": "12-15", "rest_between_sets": "60 seconds", "form_tip": "Keep a slight bend in elbows throughout the movement to protect the joint." },
+    { "name": "Cable Crossovers", "sets": 3, "reps": "12-15", "rest_between_sets": "60 seconds", "form_tip": "Squeeze your chest at the center and control the negative phase." }
+  ],
+  "back": [
+    { "name": "Pull-Ups / Assisted Pull-Ups", "sets": 3, "reps": "8-10", "rest_between_sets": "90 seconds", "form_tip": "Pull with your back, not your arms. Squeeze shoulder blades together." },
+    { "name": "Bent-Over Dumbbell Rows", "sets": 4, "reps": "10-12", "rest_between_sets": "90 seconds", "form_tip": "Keep your back flat, almost parallel to the floor, and core engaged." },
+    { "name": "Lat Pulldowns", "sets": 3, "reps": "10-12", "rest_between_sets": "60 seconds", "form_tip": "Pull the bar to your upper chest, squeezing your lats. Avoid leaning too far back." },
+    { "name": "Seated Cable Rows", "sets": 3, "reps": "12", "rest_between_sets": "60 seconds", "form_tip": "Keep torso upright, squeeze shoulder blades at the end, do not use momentum." },
+    { "name": "Deadlifts", "sets": 4, "reps": "5-8", "rest_between_sets": "120 seconds", "form_tip": "Keep the bar close to your shins, hinge at hips, maintain a neutral spine." },
+    { "name": "Single-Arm Dumbbell Row", "sets": 3, "reps": "10-12 each side", "rest_between_sets": "60 seconds", "form_tip": "Support your non-working side on a bench, pull the dumbbell towards your hip." }
+  ],
+  "shoulders": [
+    { "name": "Overhead Dumbbell Press", "sets": 4, "reps": "10-12", "rest_between_sets": "90 seconds", "form_tip": "Press straight up, don't flare elbows too wide. Keep core braced." },
+    { "name": "Arnold Press", "sets": 3, "reps": "10-12", "rest_between_sets": "90 seconds", "form_tip": "Rotate your palms forward as you press up, and backward as you lower the weight." },
+    { "name": "Lateral Raises", "sets": 3, "reps": "12-15", "rest_between_sets": "60 seconds", "form_tip": "Raise to shoulder height with a slight bend in elbows. Lead with your elbows." },
+    { "name": "Front Raises", "sets": 3, "reps": "12", "rest_between_sets": "60 seconds", "form_tip": "Alternate arms and control the movement on the way down." },
+    { "name": "Face Pulls", "sets": 3, "reps": "15", "rest_between_sets": "60 seconds", "form_tip": "Pull towards your face, externally rotating your shoulders. Focus on rear delts." }
+  ],
+  "legs": [
+    { "name": "Barbell Squats", "sets": 4, "reps": "10-12", "rest_between_sets": "120 seconds", "form_tip": "Push through your heels, keep chest up and knees tracking over toes." },
+    { "name": "Romanian Deadlifts", "sets": 3, "reps": "10-12", "rest_between_sets": "90 seconds", "form_tip": "Hinge at the hips, keep the bar close to your legs, feel the stretch in your hamstrings." },
+    { "name": "Bulgarian Split Squats", "sets": 3, "reps": "10 each leg", "rest_between_sets": "90 seconds", "form_tip": "Keep your front foot far enough forward so your knee doesn't pass your toes." },
+    { "name": "Leg Press", "sets": 3, "reps": "12-15", "rest_between_sets": "90 seconds", "form_tip": "Don't lock out your knees at the top of the movement to maintain tension." },
+    { "name": "Walking Lunges", "sets": 3, "reps": "12 each leg", "rest_between_sets": "60 seconds", "form_tip": "Keep your torso upright and lower your back knee close to the floor." },
+    { "name": "Calf Raises", "sets": 4, "reps": "15-20", "rest_between_sets": "45 seconds", "form_tip": "Full range of motion — go all the way up on your toes and stretch down fully." },
+    { "name": "Glute Bridges", "sets": 3, "reps": "15", "rest_between_sets": "60 seconds", "form_tip": "Squeeze your glutes at the top and hold for a second. Drive through your heels." }
+  ],
+  "arms": [
+    { "name": "Barbell Bicep Curls", "sets": 3, "reps": "10-12", "rest_between_sets": "60 seconds", "form_tip": "Keep elbows pinned to your sides, absolutely no swinging of the torso." },
+    { "name": "Hammer Curls", "sets": 3, "reps": "12", "rest_between_sets": "60 seconds", "form_tip": "Keep palms facing each other throughout the movement. Targets the brachialis." },
+    { "name": "Preacher Curls", "sets": 3, "reps": "10-12", "rest_between_sets": "60 seconds", "form_tip": "Keep your armpits snug against the pad, control the weight on the way down." },
+    { "name": "Tricep Dips", "sets": 3, "reps": "10-12", "rest_between_sets": "60 seconds", "form_tip": "Keep your body upright to focus on the triceps, lean forward to hit the chest." },
+    { "name": "Tricep Pushdowns", "sets": 3, "reps": "12-15", "rest_between_sets": "60 seconds", "form_tip": "Keep upper arms completely stationary, squeeze the triceps hard at the bottom." },
+    { "name": "Overhead Tricep Extension", "sets": 3, "reps": "12", "rest_between_sets": "60 seconds", "form_tip": "Keep your elbows pointing towards the ceiling and close to your head." }
+  ],
+  "core": [
+    { "name": "Plank", "sets": 3, "reps": "45-60 seconds", "rest_between_sets": "30 seconds", "form_tip": "Keep your body in a perfectly straight line from head to heels. Don't let hips sag." },
+    { "name": "Bicycle Crunches", "sets": 3, "reps": "20 each side", "rest_between_sets": "30 seconds", "form_tip": "Twist from your torso, trying to touch your shoulder (not just elbow) to your knee." },
+    { "name": "Hanging Leg Raises", "sets": 3, "reps": "12-15", "rest_between_sets": "45 seconds", "form_tip": "Control the movement entirely with your abs, avoid swinging your body." },
+    { "name": "Russian Twists", "sets": 3, "reps": "20 total", "rest_between_sets": "30 seconds", "form_tip": "Keep your feet off the ground and lean back slightly. Follow the weight with your eyes." },
+    { "name": "Dead Bugs", "sets": 3, "reps": "10 each side", "rest_between_sets": "30 seconds", "form_tip": "Crucial: Press your lower back flat into the floor throughout the entire movement." },
+    { "name": "Ab Wheel Rollouts", "sets": 3, "reps": "8-10", "rest_between_sets": "60 seconds", "form_tip": "Keep your core braced and don't let your lower back arch as you roll out." }
+  ],
+  "cardio": [
+    { "name": "Treadmill Intervals", "sets": 1, "reps": "20 minutes (1 min fast / 1 min jog)", "rest_between_sets": "N/A", "form_tip": "Increase speed gradually, maintain good posture and pump your arms." },
+    { "name": "Jump Rope", "sets": 3, "reps": "3 minutes", "rest_between_sets": "60 seconds", "form_tip": "Stay light on the balls of your feet with a very slight knee bend." },
+    { "name": "Burpees", "sets": 3, "reps": "10-12", "rest_between_sets": "60 seconds", "form_tip": "Full extension at the top with a jump, chest touches the floor at the bottom." },
+    { "name": "Mountain Climbers", "sets": 3, "reps": "30 seconds", "rest_between_sets": "30 seconds", "form_tip": "Keep hips low, hands under shoulders, and drive knees to chest rapidly." },
+    { "name": "Rowing Machine", "sets": 1, "reps": "15 minutes steady state", "rest_between_sets": "N/A", "form_tip": "Power comes from the legs first (push), then lean back, then pull with arms." },
+    { "name": "Stairmaster", "sets": 1, "reps": "15 minutes", "rest_between_sets": "N/A", "form_tip": "Step through your whole foot, try not to lean heavily on the handrails." }
+  ],
+  "flexibility": [
+    { "name": "Yoga Sun Salutations", "sets": 3, "reps": "5 flows", "rest_between_sets": "30 seconds", "form_tip": "Move seamlessly with your breath — inhale to extend, exhale to fold." },
+    { "name": "Hip Flexor Stretch", "sets": 2, "reps": "30 seconds each side", "rest_between_sets": "15 seconds", "form_tip": "Kneeling position, push hips forward gently, keep torso completely upright." },
+    { "name": "Pigeon Pose", "sets": 2, "reps": "45 seconds each side", "rest_between_sets": "15 seconds", "form_tip": "Keep your hips square to the ground and ease slowly into the stretch." },
+    { "name": "Foam Rolling (Full Body)", "sets": 1, "reps": "10 minutes", "rest_between_sets": "N/A", "form_tip": "Roll slowly (1 inch per second), pausing on tight spots or 'knots' for 20-30 seconds." },
+    { "name": "Cat-Cow Stretch", "sets": 2, "reps": "10 cycles", "rest_between_sets": "15 seconds", "form_tip": "Inhale as you arch your back and look up, exhale as you round your spine and tuck your chin." }
+  ]
+}
