@@ -64,7 +64,7 @@ def _adjust_volume(exercises: list[Exercise], goal: str, activity: str) -> list[
             sets = max(2, sets - 1)
             if reps.replace("-", "").replace(" ", "").split()[0].isdigit():
                 reps = reps  # keep higher rep ranges for fat loss
-        elif goal == "Build Muscle":
+        elif goal in ("Build Muscle", "Gain Weight"):
             sets = min(5, sets + 1)
 
         if activity in ("Sedentary", "Lightly Active"):
@@ -86,19 +86,19 @@ def _build_muscle_plan(activity: str) -> list[WorkoutDay]:
     """PPL (Push/Pull/Legs) split for muscle building."""
     return [
         WorkoutDay(day="Monday", focus="Push — Chest, Shoulders & Triceps", is_rest_day=False,
-                   warm_up=WARM_UP, exercises=_adjust_volume(CHEST_EXERCISES[:3] + SHOULDER_EXERCISES[:2] + ARM_EXERCISES[1:2], "Build Muscle", activity), cool_down=COOL_DOWN),
+                   warm_up=WARM_UP, exercises=_adjust_volume(CHEST_EXERCISES[:3] + SHOULDER_EXERCISES[:2] + ARM_EXERCISES[1:2], "Gain Weight", activity), cool_down=COOL_DOWN),
         WorkoutDay(day="Tuesday", focus="Pull — Back & Biceps", is_rest_day=False,
-                   warm_up=WARM_UP, exercises=_adjust_volume(BACK_EXERCISES[:3] + ARM_EXERCISES[0:1] + ARM_EXERCISES[2:3], "Build Muscle", activity), cool_down=COOL_DOWN),
+                   warm_up=WARM_UP, exercises=_adjust_volume(BACK_EXERCISES[:3] + ARM_EXERCISES[0:1] + ARM_EXERCISES[2:3], "Gain Weight", activity), cool_down=COOL_DOWN),
         WorkoutDay(day="Wednesday", focus="Legs & Core", is_rest_day=False,
-                   warm_up=WARM_UP, exercises=_adjust_volume(LEG_EXERCISES[:4] + CORE_EXERCISES[:2], "Build Muscle", activity), cool_down=COOL_DOWN),
+                   warm_up=WARM_UP, exercises=_adjust_volume(LEG_EXERCISES[:4] + CORE_EXERCISES[:2], "Gain Weight", activity), cool_down=COOL_DOWN),
         WorkoutDay(day="Thursday", focus="Rest & Active Recovery", is_rest_day=True,
-                   warm_up=[], exercises=_adjust_volume(FLEXIBILITY_EXERCISES[:3], "Build Muscle", activity), cool_down=COOL_DOWN),
+                   warm_up=[], exercises=_adjust_volume(FLEXIBILITY_EXERCISES[:3], "Gain Weight", activity), cool_down=COOL_DOWN),
         WorkoutDay(day="Friday", focus="Push — Chest, Shoulders & Triceps", is_rest_day=False,
-                   warm_up=WARM_UP, exercises=_adjust_volume(CHEST_EXERCISES[1:] + SHOULDER_EXERCISES[2:] + ARM_EXERCISES[3:4], "Build Muscle", activity), cool_down=COOL_DOWN),
+                   warm_up=WARM_UP, exercises=_adjust_volume(CHEST_EXERCISES[1:] + SHOULDER_EXERCISES[2:] + ARM_EXERCISES[3:4], "Gain Weight", activity), cool_down=COOL_DOWN),
         WorkoutDay(day="Saturday", focus="Pull — Back, Biceps & Rear Delts", is_rest_day=False,
-                   warm_up=WARM_UP, exercises=_adjust_volume(BACK_EXERCISES[1:] + SHOULDER_EXERCISES[3:] + ARM_EXERCISES[0:1], "Build Muscle", activity), cool_down=COOL_DOWN),
+                   warm_up=WARM_UP, exercises=_adjust_volume(BACK_EXERCISES[1:] + SHOULDER_EXERCISES[3:] + ARM_EXERCISES[0:1], "Gain Weight", activity), cool_down=COOL_DOWN),
         WorkoutDay(day="Sunday", focus="Rest & Recovery", is_rest_day=True,
-                   warm_up=[], exercises=_adjust_volume(FLEXIBILITY_EXERCISES[2:], "Build Muscle", activity), cool_down=COOL_DOWN),
+                   warm_up=[], exercises=_adjust_volume(FLEXIBILITY_EXERCISES[2:], "Gain Weight", activity), cool_down=COOL_DOWN),
     ]
 
 
@@ -126,19 +126,19 @@ def _maintain_plan(activity: str) -> list[WorkoutDay]:
     """Balanced split for maintenance."""
     return [
         WorkoutDay(day="Monday", focus="Upper Body Strength", is_rest_day=False,
-                   warm_up=WARM_UP, exercises=_adjust_volume(CHEST_EXERCISES[:2] + BACK_EXERCISES[:2] + SHOULDER_EXERCISES[:1], "Maintain", activity), cool_down=COOL_DOWN),
+                   warm_up=WARM_UP, exercises=_adjust_volume(CHEST_EXERCISES[:2] + BACK_EXERCISES[:2] + SHOULDER_EXERCISES[:1], "Maintain Weight", activity), cool_down=COOL_DOWN),
         WorkoutDay(day="Tuesday", focus="Cardio & Core", is_rest_day=False,
-                   warm_up=WARM_UP, exercises=_adjust_volume(CARDIO_EXERCISES[:2] + CORE_EXERCISES[:3], "Maintain", activity), cool_down=COOL_DOWN),
+                   warm_up=WARM_UP, exercises=_adjust_volume(CARDIO_EXERCISES[:2] + CORE_EXERCISES[:3], "Maintain Weight", activity), cool_down=COOL_DOWN),
         WorkoutDay(day="Wednesday", focus="Lower Body Strength", is_rest_day=False,
-                   warm_up=WARM_UP, exercises=_adjust_volume(LEG_EXERCISES[:4], "Maintain", activity), cool_down=COOL_DOWN),
+                   warm_up=WARM_UP, exercises=_adjust_volume(LEG_EXERCISES[:4], "Maintain Weight", activity), cool_down=COOL_DOWN),
         WorkoutDay(day="Thursday", focus="Rest & Active Recovery", is_rest_day=True,
-                   warm_up=[], exercises=_adjust_volume(FLEXIBILITY_EXERCISES[:3], "Maintain", activity), cool_down=COOL_DOWN),
+                   warm_up=[], exercises=_adjust_volume(FLEXIBILITY_EXERCISES[:3], "Maintain Weight", activity), cool_down=COOL_DOWN),
         WorkoutDay(day="Friday", focus="Full Body Functional", is_rest_day=False,
-                   warm_up=WARM_UP, exercises=_adjust_volume(CHEST_EXERCISES[2:3] + BACK_EXERCISES[2:3] + LEG_EXERCISES[3:4] + CORE_EXERCISES[3:], "Maintain", activity), cool_down=COOL_DOWN),
+                   warm_up=WARM_UP, exercises=_adjust_volume(CHEST_EXERCISES[2:3] + BACK_EXERCISES[2:3] + LEG_EXERCISES[3:4] + CORE_EXERCISES[3:], "Maintain Weight", activity), cool_down=COOL_DOWN),
         WorkoutDay(day="Saturday", focus="Cardio & Flexibility", is_rest_day=False,
-                   warm_up=WARM_UP, exercises=_adjust_volume(CARDIO_EXERCISES[3:] + FLEXIBILITY_EXERCISES[:2], "Maintain", activity), cool_down=COOL_DOWN),
+                   warm_up=WARM_UP, exercises=_adjust_volume(CARDIO_EXERCISES[3:] + FLEXIBILITY_EXERCISES[:2], "Maintain Weight", activity), cool_down=COOL_DOWN),
         WorkoutDay(day="Sunday", focus="Rest & Recovery", is_rest_day=True,
-                   warm_up=[], exercises=_adjust_volume(FLEXIBILITY_EXERCISES[2:], "Maintain", activity), cool_down=COOL_DOWN),
+                   warm_up=[], exercises=_adjust_volume(FLEXIBILITY_EXERCISES[2:], "Maintain Weight", activity), cool_down=COOL_DOWN),
     ]
 
 
@@ -149,7 +149,9 @@ def _maintain_plan(activity: str) -> list[WorkoutDay]:
 _GOAL_MAP = {
     "Lose Weight": _lose_weight_plan,
     "Build Muscle": _build_muscle_plan,
+    "Gain Weight": _build_muscle_plan,
     "Maintain": _maintain_plan,
+    "Maintain Weight": _maintain_plan,
 }
 
 

@@ -10,8 +10,6 @@ from fastapi import Request
 from fastapi.responses import JSONResponse
 from starlette.middleware.base import BaseHTTPMiddleware
 
-from ai_model.validator import AIOutputValidationError
-
 logger = logging.getLogger(__name__)
 
 
@@ -22,17 +20,6 @@ class GlobalErrorHandlerMiddleware(BaseHTTPMiddleware):
         try:
             response = await call_next(request)
             return response
-
-        except AIOutputValidationError as e:
-            logger.error("AI output validation failed: %s", e)
-            return JSONResponse(
-                status_code=502,
-                content={
-                    "success": False,
-                    "message": "The AI model returned an invalid response. Please try again.",
-                    "detail": str(e),
-                },
-            )
 
         except Exception as e:
             logger.exception("Unhandled server error: %s", e)

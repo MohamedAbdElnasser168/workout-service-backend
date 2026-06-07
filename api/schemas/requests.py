@@ -18,8 +18,8 @@ class Gender(str, Enum):
 
 class FitnessGoal(str, Enum):
     LOSE_WEIGHT = "Lose Weight"
-    BUILD_MUSCLE = "Build Muscle"
-    MAINTAIN = "Maintain"
+    GAIN_WEIGHT = "Gain Weight"
+    MAINTAIN_WEIGHT = "Maintain Weight"
 
 
 class ActivityLevel(str, Enum):
